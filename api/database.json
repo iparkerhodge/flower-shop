@@ -1,0 +1,79 @@
+{
+    "flowers": [
+        {
+            "id": 1,
+            "commonName": "Tulip",
+            "color": "yellow"
+        },
+        {
+            "id": 2,
+            "commonName": "Lily",
+            "color": "pink"
+        }
+    ],
+    "retailers": [
+        {
+            "id": 1,
+            "name": "FLWR Shop",
+            "city": "Nashville",
+            "state": "TN",
+            "address": "123 S 11th St",
+            "distributorId": 1
+        },
+        {
+            "id": 2,
+            "name": "Flowerboy Project",
+            "city": "Los Angelos",
+            "state": "CA",
+            "address": "824 Lincoln Blvd",
+            "distributorId": 3
+        },
+        {
+            "id": 3,
+            "name": "Solabee Flowers & Botanicals",
+            "city": "Portland",
+            "state": "OR",
+            "address": "801 N Killingsworth St",
+            "distributorId": 3
+        },
+        {
+            "id": 4,
+            "name": "Putnam & Putnam",
+            "city": "New York",
+            "state": "NY",
+            "address": "120 W 28th St",
+            "distributorId": 2
+        },
+        {
+            "id": 5,
+            "name": "Studio Choo",
+            "city": "San Francisco",
+            "state": "CA",
+            "address": "701 11th Ave",
+            "distributorId": 3
+        }
+    ],
+    "distributors": [
+        {
+            "id": 1,
+            "name": "Kennicott Brothers",
+            "city": "Chicago",
+            "state": "IL",
+            "address": "452 N Ashland Ave"
+        },
+        {
+            "id": 2,
+            "name": "Sieck Wholesale Florist Group",
+            "city": "Baltimore",
+            "state": "MD",
+            "address": "311 E Chase St"
+        },
+        {
+            "id": 3,
+            "name": "Mayesh Wholesale Florist, Inc.",
+            "city": "Los Angelos",
+            "state": "Ca",
+            "address": "755 Wall Street"
+        }
+    ]
+}
