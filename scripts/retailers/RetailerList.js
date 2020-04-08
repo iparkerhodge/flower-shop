@@ -1,4 +1,5 @@
 import { useRetailers } from "./RetailerProvider.js"
+import { useDistributors } from "../distributors/DistributorProvider.js"
 import { RetailHTML } from "./Retailer.js"
 
 
@@ -11,9 +12,15 @@ export const RetailerList = () => {
 }
 
 const render = allTheRetailers => {
+    const distributors = useDistributors()
+
+
     contentTarget.innerHTML = `
-    <div><h3>Retailers</h3>
-    ${allTheRetailers.map(retailer => RetailHTML(retailer)).join('')}
-    </div>
+    <div class="title">Retailers</div>
+    ${allTheRetailers.map(retailer => {
+        const foundDist = distributors.find((distributor => retailer.distributorId === distributor.id))
+
+        return RetailHTML(retailer, foundDist)
+    }).join("")}
     `
 }

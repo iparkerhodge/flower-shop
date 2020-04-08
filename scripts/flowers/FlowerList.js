@@ -12,8 +12,7 @@ export const FlowerList = () => {
 
 const render = allTheFlowers => {
     contentTarget.innerHTML = `
-    <div><h3>Flowers</h3>
+    <div class="title">Flowers</div>
     ${allTheFlowers.map(flower => FlowerHTML(flower)).join('')}
-    </div>
     `
 }

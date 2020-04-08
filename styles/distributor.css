@@ -1,0 +1,22 @@
+.distributorContainer {
+    height: 22.5vh;
+    overflow: scroll;
+    flex-basis: 100%;
+    background-color: #FFF082;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px;
+}
+
+.distributor {
+    margin: 10px;
+    color: #FF8087;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.distributor__name {
+    font-size: 20px;
+}

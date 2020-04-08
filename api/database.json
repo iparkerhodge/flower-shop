@@ -3,12 +3,32 @@
         {
             "id": 1,
             "commonName": "Tulip",
-            "color": "yellow"
+            "color": "yellow",
+            "image": "../styles/images/flower-yellow.svg"
         },
         {
             "id": 2,
             "commonName": "Lily",
-            "color": "pink"
+            "color": "pink",
+            "image": "../styles/images/flower-pink.svg"
+        },
+        {
+            "id": 3,
+            "commonName": "Orchid",
+            "color": "white",
+            "image": "../styles/images/flower-white.svg"
+        },
+        {
+            "id": 4,
+            "commonName": "Rose",
+            "color": "red",
+            "image": "../styles/images/flower-red.svg"
+        },
+        {
+            "id": 5,
+            "commonName": "Iris",
+            "color": "blue",
+            "image": "../styles/images/flower-blue.svg"
         }
     ],
     "retailers": [

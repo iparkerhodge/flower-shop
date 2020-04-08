@@ -12,8 +12,7 @@ export const DistributorList = () => {
 
 const render = allTheDistributors => {
     contentTarget.innerHTML = `
-    <div><h3>Distributors</h3>
+    <div class="title">Distributors</div>
     ${allTheDistributors.map(distributor => DistributorHTML(distributor)).join('')}
-    </div>
     `
 }

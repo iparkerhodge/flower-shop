@@ -1,0 +1,23 @@
+.retailerContainer {
+    height: 22.5vh;
+    overflow: scroll;
+    flex-basis: 100%;
+    background-color: #FFC850;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px;
+}
+
+.retailer {
+    margin: 10px;
+    color: #FF8087;
+    font-weight: 700;
+    letter-spacing: 1px;
+    flex-basis: 18%;
+}
+
+.retailer__name {
+    font-size: 20px;
+}
