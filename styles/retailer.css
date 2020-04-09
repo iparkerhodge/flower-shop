@@ -1,8 +1,8 @@
 .retailerContainer {
-    height: 22.5vh;
+    height: 80vh;
     overflow: scroll;
     flex-basis: 100%;
-    background-color: #FFC850;
+    background-color: #FFF082;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -15,9 +15,59 @@
     color: #FF8087;
     font-weight: 700;
     letter-spacing: 1px;
-    flex-basis: 18%;
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 3px solid #BEE86E;
+}
+
+.retailer__info {
+    flex-basis: 100%;
+}
+
+.retailer__flowersTitle {
+    flex-basis: 100%;
+    margin: 10px 0px;
+}
+
+.retailer__flowers {
+    flex-basis: 100%;
+    display: flex;
+}
+
+.flower {
+    margin: 0px 10px;
+    text-align: center;
+}
+
+.retailer__nurseries {
+    flex-basis: 45%;
+    margin: 10px 0px;
 }
 
 .retailer__name {
     font-size: 20px;
+    text-decoration: underline #FF8087;
+    width: fit-content;
+}
+
+.retailer__dist {
+    margin: 10px 0px;
+    flex-basis: 45%;
+}
+
+.flower__image {
+    height: 2rem;
+}
+
+.retailer:hover .retailer__name{
+    font-size: 24px;
+    animation: rock;
+    animation-duration: 0.2s;
+    animation-iteration-count: 4;
+}
+
+@keyframes rock {
+    0%, 100% { transform: rotate(-2deg); }
+    50% { transform: rotate(2deg); }
 }
