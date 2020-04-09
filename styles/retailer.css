@@ -8,6 +8,7 @@
     justify-content: flex-start;
     font-family: 'Roboto', sans-serif;
     border-radius: 5px;
+    box-shadow: 5px 5px rgba(255, 128, 134, 0.4);
 }
 
 .retailer {
@@ -19,21 +20,23 @@
     display: flex;
     flex-wrap: wrap;
     border-bottom: 3px solid #BEE86E;
+    align-items: center;
+    background: #FFF082;
+    padding: 15px;
+    border-radius: 5px;
+    background-image: linear-gradient(180deg, rgba(255,255,255,0.50) 0%, rgba(255,249,249,0.14) 100%);
 }
 
 .retailer__info {
     flex-basis: 100%;
 }
 
-.retailer__flowersTitle {
-    flex-basis: 100%;
-    margin: 10px 0px;
-}
-
 .retailer__flowers {
     flex-basis: 100%;
     display: flex;
     justify-content: center;
+    margin: 20px 0px;
+    width: fit-content;
 }
 
 .flower {
@@ -42,7 +45,7 @@
 }
 
 .retailer__nurseries {
-    flex-basis: 45%;
+    flex-basis: 50%;
     margin: 10px 0px;
     display: flex;
     flex-wrap: wrap;
@@ -51,35 +54,37 @@
 
 .retailer__name {
     font-size: 20px;
-    text-decoration: underline #FF8087;
     width: fit-content;
 }
 
 .retailer__dist {
     margin: 10px 0px;
-    flex-basis: 45%;
+    flex-basis: 50%;
+}
+
+.dist__location, .nursery__loc {
+    font-size: 14px;
 }
 
 .flower__image {
-    height: 2rem;
+    height: 3rem;
 }
 
 .nursery {
     margin: 5px 5px;
     flex-basis: 45%;
-    text-align: center;
 }
 
 .nursery__title {
     flex-basis: 100%;
-    text-align: center;
 }
 
 .retailer:hover .retailer__name{
-    font-size: 24px;
+    font-size: 26px;
+    text-decoration: underline #FF8087;
 }
 
-.flower:hover {
+.flower:hover .flower__image{
     animation: squishy;
     animation-duration: 1s;
     animation-iteration-count: 1;
@@ -92,7 +97,7 @@
     }
     50% {
         transform-origin: bottom center;
-        transform: scaleY(1.05);
+        transform: scaleY(1.10);
     }
     100% {
         transform-origin: bottom center;
