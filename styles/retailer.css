@@ -33,16 +33,20 @@
 .retailer__flowers {
     flex-basis: 100%;
     display: flex;
+    justify-content: center;
 }
 
 .flower {
-    margin: 0px 10px;
+    margin: 0px 15px;
     text-align: center;
 }
 
 .retailer__nurseries {
     flex-basis: 45%;
     margin: 10px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
 }
 
 .retailer__name {
@@ -60,14 +64,38 @@
     height: 2rem;
 }
 
-.retailer:hover .retailer__name{
-    font-size: 24px;
-    animation: rock;
-    animation-duration: 0.2s;
-    animation-iteration-count: 4;
+.nursery {
+    margin: 5px 5px;
+    flex-basis: 45%;
+    text-align: center;
 }
 
-@keyframes rock {
-    0%, 100% { transform: rotate(-2deg); }
-    50% { transform: rotate(2deg); }
+.nursery__title {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.retailer:hover .retailer__name{
+    font-size: 24px;
+}
+
+.flower:hover {
+    animation: squishy;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes squishy {
+    0% {
+        transform-origin: bottom center;
+        transform: scaleY(1);
+    }
+    50% {
+        transform-origin: bottom center;
+        transform: scaleY(1.05);
+    }
+    100% {
+        transform-origin: bottom center;
+        transform: scaleY(1);
+    }
 }

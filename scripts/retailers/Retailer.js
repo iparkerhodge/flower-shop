@@ -12,8 +12,10 @@ export const RetailHTML = (shop, dist, nurseries, flowers) => {
         <div class="retailer__flowers">
             ${flowers.map(flower => FlowerHTML(flower)).join("")}
         </div>
-        <div class="retailer__dist">Distributor: ${dist.name}</div>
-        <div class="retailer__nurseries">Source Nurseries:${nurseries.map(nursery => {
+        <div class="retailer__dist">Distributor: ${dist.name}
+            <div class="dist__location">${dist.city}, ${dist.state}</div>
+        </div>
+        <div class="retailer__nurseries"><div class="nursery__title">Source Nurseries:</div>${nurseries.map(nursery => {
             return `
             <div class="nursery">
                 <div>${nursery.name}</div>

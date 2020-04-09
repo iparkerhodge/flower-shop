@@ -26,18 +26,26 @@ const render = allTheRetailers => {
     contentTarget.innerHTML = `
     <div class="title">Retailers</div>
     ${allTheRetailers.map(retailer => {
-        const foundDist = distributors.find(distributor => retailer.distributorId === distributor.id)
+        const foundDist = distributors.find(distributor =>  distributor.id === retailer.distributorId)
         const relatedNurseryPairArray = distributorNursery.filter(pair => foundDist.id === pair.distributorId)
         const relatedNurseries = relatedNurseryPairArray.map(relatedPair =>{
             return allTheNurseries.find(nursery => nursery.id === relatedPair.nurseryId)
         })
-        const nurseryFlowerPairArray = nurseryFlowers.filter(pair => pair.nurserId === relatedNurseries.id)
+        
+        let nurseryFlowerPairArray = []
+        relatedNurseries.forEach(nursery => {
+            let filtered = nurseryFlowers.filter(pair => pair.nurseryId === nursery.id)
+            filtered.forEach(rel => nurseryFlowerPairArray.push(rel))
+        })
+
+
         const relatedFlowers = nurseryFlowerPairArray.map(relatedPair => {
             return allTheFlowers.find(flower => flower.id === relatedPair.flowerId)
         })
 
+        const relatedFlowersFiltered = Array.from(new Set (relatedFlowers))
 
-        return RetailHTML(retailer, foundDist, relatedNurseries, relatedFlowers)
+        return RetailHTML(retailer, foundDist, relatedNurseries, relatedFlowersFiltered)
     }).join("")}
     `
 }

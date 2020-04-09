@@ -29,6 +29,18 @@
             "commonName": "Iris",
             "color": "blue",
             "image": "../styles/images/flower-blue.svg"
+        },
+        {
+            "id": 6,
+            "commonName": "Jade Vine",
+            "color": "light blue",
+            "image": "../styles/images/flower-lightblue.svg"
+        },
+        {
+            "id": 7,
+            "commonName": "Sunflower",
+            "color": "yellow",
+            "image": "../styles/images/flower-sun.svg"
         }
     ],
     "retailers": [
@@ -245,6 +257,16 @@
             "id": 18,
             "nurseryId": 5,
             "flowerId": 5
+        },
+        {
+            "id": 19,
+            "nurseryId": 6,
+            "flowerId": 6
+        },
+        {
+            "id": 20,
+            "nurseryId": 6,
+            "flowerId": 7
         }
     ],
     "DistributorNurseries": [
