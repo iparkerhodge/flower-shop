@@ -95,5 +95,98 @@
             "state": "Ca",
             "address": "755 Wall Street"
         }
+    ],
+    "nurseries": [
+        {
+            "id": 1,
+            "name": "Swansons",
+            "city": "Seattle",
+            "state": "WA",
+            "address": "9701 15th Ave"
+        },
+        {
+            "id": 2,
+            "name": "Gethsemane Garden Center",
+            "city": "Chicago",
+            "state": "IL",
+            "address": "5739 Clark St"
+        },
+        {
+            "id": 3,
+            "name": "Barton Springs Nursery",
+            "city": "Austin",
+            "state": "TX",
+            "address": "3601 Bee Caves Rd"
+        },
+        {
+            "id": 4,
+            "name": "Bates Nursery",
+            "city": "Nashville",
+            "state": "TN",
+            "address": "3810 Whites Creek Pike"
+        },
+        {
+            "id": 5,
+            "name": "Zone Ten Nursery",
+            "city": "Miami",
+            "state": "FL",
+            "address": "18900 SW 186th St"
+        },
+        {
+            "id": 6,
+            "name": "PlantWorks NYC",
+            "city": "New York",
+            "state": "NY",
+            "address": "28 E 4th St"
+        }
+    ],
+    "NurseryFlowers": [
+        {
+            "id": 1,
+            "nurseryId": 1,
+            "flowerId": 1
+        },
+        {
+            "id": 2,
+            "nurseryId": 1,
+            "flowerId": 2
+        },
+        {
+            "id": 3,
+            "nurseryId": 1,
+            "flowerId": 4
+        },
+        {
+            "id": 4,
+            "nurseryId": 2,
+            "flowerId": 2
+        },
+        {
+            "id": 5,
+            "nurseryId": 2,
+            "flowerId": 3
+        }
+    ],
+    "DistributorNurseries": [
+        {
+            "id": 1,
+            "nurseryId": 1,
+            "distributorId": 1
+        },
+        {
+            "id": 2,
+            "nurseryId": 1,
+            "distributorId": 3
+        },
+        {
+            "id": 3,
+            "nurseryId": 2,
+            "distributorId": 1
+        },
+        {
+            "id": 1,
+            "nurseryId": 2,
+            "distributorId": 2
+        }
     ]
 }
