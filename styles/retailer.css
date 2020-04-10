@@ -8,7 +8,6 @@
     justify-content: flex-start;
     font-family: 'Roboto', sans-serif;
     border-radius: 5px;
-    box-shadow: 5px 5px rgba(255, 128, 134, 0.4);
 }
 
 .retailer {
@@ -24,7 +23,7 @@
     background: #FFF082;
     padding: 15px;
     border-radius: 5px;
-    background-image: linear-gradient(180deg, rgba(255,255,255,0.50) 0%, rgba(255,249,249,0.14) 100%);
+    background-image: linear-gradient(180deg, rgba(255,255,255,0.40) 0%, rgba(255,249,249,0.14) 100%);
 }
 
 .retailer__info {
